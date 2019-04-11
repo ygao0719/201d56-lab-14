@@ -1,13 +1,60 @@
-/* TODO: Make it awesome */
+
 *{
   margin: 40px 20px;
-  background-color:rgb(197, 229, 240);
+  background-color:rgb(239, 247, 250);
 }
+nav ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+nav {
+  padding: 50px;
+}
+
+section {
+  margin: 25px;
+  padding: 10px;
+}
+
 h1{
   text-align: center;
+  font-weight: 700;
+  margin: 20px 0;
 }
+
 body{
   font-size: 25px;
-  margin: 30px;
+  margin: 150px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+p, ol, ul {
+  line-height: 30px;
+}
+
+select {
+  padding: 20px;
+  margin: 20px;
+  font-size: 25px;
+  background-color: white;
+}
+
+input {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+input[type="submit"] {
+  background-color: greenyellow;
+  font-weight: 700;
+}
+
+table td, th {
+  padding: 15px;
+  border: 1px dashed navy;
+  border-radius: 5px;
+  margin: 25px;
 }
