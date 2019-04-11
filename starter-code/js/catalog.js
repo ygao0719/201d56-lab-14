@@ -13,8 +13,7 @@ document.getElementById('quantity').min = 0;
 // On screen load, we call this method to put all of the busmall options
 // (the things in the Product.allProducts array) into the drop down list.
 function populateForm() {
-
-  //TODO: Add an <option> tag inside the form's select for each product
+  //Add an <option> tag inside the form's select for each product
 
   for (var i in Product.allProducts) {
     var optionEl = document.createElement('option');
@@ -23,7 +22,6 @@ function populateForm() {
     selectElement.appendChild(optionEl);
     console.log(Product.allProducts[i].name);
   }
-
 }
 
 // When someone submits the form, we need to add the selected item to the cart
@@ -42,13 +40,12 @@ function handleSubmit(event) {
 
 }
 
-// TODO: Add the selected item and quantity to the cart
+// Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
   //  suss out the item picked from the select list
   selectProduct = selectElement.options[selectElement.selectedIndex].value;
 
   // get the quantity
-
   selectQuantity = document.getElementById('quantity').value;
   console.log(selectQuantity);
   //using those, add one item to the Cart
@@ -61,14 +58,14 @@ function updateCounter() {
   document.getElementById('itemCount').innerText = cartItemCounter;
 }
 
-// TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
+// As you add items into the cart, show them (item & quantity) in the cart preview div
 var cartContentDiv = document.getElementById('cartContents');
 var ulEl = document.createElement('ul');
 cartContentDiv.appendChild(ulEl);
 function updateCartPreview() {
-  // TODO: Get the item and quantity from the form
+  // Get the item and quantity from the form
 
-  // TODO: Add a new element to the cartContents div with that information
+  // Add a new element to the cartContents div with that information
     var liEl = document.createElement('li');
     liEl.textContent= `${selectProduct} x ${selectQuantity}`;
     ulEl.appendChild(liEl);
