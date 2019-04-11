@@ -45,7 +45,6 @@ Your `index.html` is an order form for customers: it will have an order form for
 There's nothing really new here, just extensions and adaptations of previous things we have done. Here's some things to think about as you go plan out the lab for today:
 
 1. You'll need to use local storage to share data between the two HTML pages.
-1. The constructor from BusMall might be handy as a way to organize your products.
 1. You and your partner should plan out how you want to collaboratively attack the problem with regards to pair programming. It's up to you how the details are managed, but make sure each partner makes contributions in both CSS and JS files.
 1. Deploy the repo so you can see how it looks in production as you work on it. 
 
